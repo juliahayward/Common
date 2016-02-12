@@ -1,0 +1,6 @@
+Common/bin/
+Common/obj/
+Common/TestResults/Common.TE.Tests.mdf
+Common/TestResults/Common.TE.Tests_log.ldf
+CommonTests/CommonTests/bin/
+CommonTests/CommonTests/obj/

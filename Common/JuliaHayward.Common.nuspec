@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Julia's Common Library</title>
+    <authors>Julia Hayward</authors>
+    <owners>Julia Hayward</owners>
+    <summary>A collection of Randomly Useful Stuff</summary>
+    <projectUrl>https://github.com/juliahayward/Common</projectUrl>
+    <!-- iconUrl></iconUrl><32x32 png, transparent background -->
+    <licenseUrl>https://github.com/juliahayward/Common</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Contains generic code shared across all applications</description>
+    <copyright>Copyright 2016, Julia Hayward</copyright>
+    <tags>Julia's Common Library</tags>
+    <dependencies>
+      <dependency id="NewtonSoft.Json" version="6.0.8" />
+      <dependency id="RestSharp" version="105.0.1" />
+      <dependency id="TrelloNet.Edge" version="0.7.2.1" />
+    </dependencies>
+  </metadata>
+</package>
