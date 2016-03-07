@@ -18,6 +18,11 @@ namespace JuliaHayward.Common.Logging
             _trelloAuthKey = trelloAuthKey;
         }
 
+        public void Error(string appName, Exception exception)
+        {
+            Error(appName, exception.Message, exception.StackTrace);
+        }
+
         public void Error(string appName, string message, string detail)
         {
             // https://github.com/dillenmeister/Trello.NET/wiki

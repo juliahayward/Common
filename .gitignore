@@ -4,3 +4,5 @@ Common/TestResults/Common.TE.Tests.mdf
 Common/TestResults/Common.TE.Tests_log.ldf
 CommonTests/CommonTests/bin/
 CommonTests/CommonTests/obj/
+Common/TestResults/JuliaHayward.Common.TE.Tests.mdf
+Common/TestResults/JuliaHayward.Common.TE.Tests_log.ldf
