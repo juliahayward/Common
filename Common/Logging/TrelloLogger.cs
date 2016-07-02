@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JuliaHayward.Common.Environment;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -25,6 +26,8 @@ namespace JuliaHayward.Common.Logging
 
         public void Error(string appName, string message, string detail)
         {
+            if (JuliaEnvironment.CurrentEnvironment == EnvironmentType.Dev) return;
+
             // https://github.com/dillenmeister/Trello.NET/wiki
 
             var trello = new TrelloNet.Trello(_trelloKey);
