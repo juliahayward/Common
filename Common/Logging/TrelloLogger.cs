@@ -21,7 +21,17 @@ namespace JuliaHayward.Common.Logging
 
         public void Error(string appName, Exception exception)
         {
-            Error(appName, exception.Message, exception.StackTrace);
+            var nestedStackTrace = exception.StackTrace;
+            var nestedMessage = exception.Message;
+            while (exception.InnerException != null)
+            {
+                exception = exception.InnerException;
+                nestedStackTrace = exception.StackTrace + System.Environment.NewLine + "-----"
+                    + System.Environment.NewLine + nestedStackTrace;
+                nestedMessage = exception.Message;
+            }
+
+            Error(appName, nestedMessage, nestedStackTrace);
         }
 
         public void Error(string appName, string message, string detail)
